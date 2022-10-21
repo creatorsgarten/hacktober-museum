@@ -4,6 +4,7 @@
   import { faBrain, faGamepad } from "@fortawesome/free-solid-svg-icons";
   import { Founders } from "../enums/founders.enum";
   import { AcademicTopics } from "../enums/topics.enum";
+  import CardHeader from "./card-header.svelte";
   import "../style/typography.css";
   import "../style/card-theme.css";
 
@@ -14,6 +15,7 @@
   export let topic: AcademicTopics;
   export let githubUrl: string;
   export let imagePath: string | undefined;
+  export let detailHref: string | undefined;
 
   const colorSet =
     display == "light"
@@ -48,22 +50,13 @@
           class="grid max-h-full grid-flow-col grid-cols-1 grid-rows-2 justify-between px-2"
         >
           <div class="col-span-1 py-2">
-            <div class="flex content-center justify-between">
-              <p class="th-title break-words line-clamp-2 {colorSet.text}">
-                {title}
-              </p>
-              {#if theme == "mindful"}
-                <Fa
-                  icon={faBrain}
-                  class="ml-2 place-self-center text-2xl {colorSet.text}"
-                />
-              {:else}
-                <Fa
-                  icon={faGamepad}
-                  class="ml-2 place-self-center text-2xl {colorSet.text}"
-                />
-              {/if}
-            </div>
+            {#if detailHref}
+              <a href={detailHref}>
+                <CardHeader {title} {theme} textClassname={colorSet.text} />
+              </a>
+            {:else}
+              <CardHeader {title} {theme} textClassname={colorSet.text} />
+            {/if}
           </div>
           <div class="col-span-1 py-2">
             <div class="grid grid-flow-col grid-rows-2 gap-y-2">

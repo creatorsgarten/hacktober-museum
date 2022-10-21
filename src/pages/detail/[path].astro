@@ -1,0 +1,17 @@
+---
+import { entries } from "../../entries";
+import { snakeCase } from "snake-case";
+
+export function getStaticPaths() {
+  return entries
+    .map(({ title, detail }) => ({
+      params: { path: snakeCase(title) },
+      props: { title, detail },
+    }))
+    .filter(({ props: { detail } }) => detail !== undefined);
+}
+
+const { title, detail } = Astro.props;
+---
+
+<h1>{title}</h1>
