@@ -1,3 +1,3 @@
 {
-  "conventionalCommits.scopes": ["gallery"]
+  "conventionalCommits.scopes": ["gallery", "filter"]
 }
