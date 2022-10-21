@@ -12,9 +12,9 @@ export interface CardProps {
   display: "light";
   title: "Kachaooo";
   theme: "playful";
-  founderName: Founders;
-  topic: AcademicTopics;
-  githubUrl: string;
-  imagePath: string | undefined;
+  founderName: "21September";
+  topic: "Git";
+  githubUrl: "https://github.com/SeenamZaSodaSingha";
+  imagePath: undefined;
   detail?: DetailedPageProps;
 }
