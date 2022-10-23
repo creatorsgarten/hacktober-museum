@@ -42,6 +42,7 @@ Please follow the [Contribution guidelines.](CONTRIBUTING.MD) One more thing ...
 - [**Chamikorn Phiwla-oung**](https://github.com/Jabont) - ideation of website's theme
 - [**Puvit Pracharktam**](https://github.com/pondspective) - @intaniger's Polaris on getting started with UI design.
 - [**Phoomparin Mano**](https://github.com/heypoom) - CI/CD setup and wonderful domain name https://museum.creatorsgarten.org
+- [**Nutthapat Pongtanyavichai**](https://github.com/Leomotors) - General Improvements
 - [**Surasak Chaisurin**](https://github.com/ryanrw) - Stranger who passed by and contributed the project
 - `/* your name are the next one ... */`
 
