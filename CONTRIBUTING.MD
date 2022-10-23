@@ -18,7 +18,7 @@ For more details, go to [https://pnpm.js.org](https://pnpm.js.org/)
 
 ## Quick guide to add your project
 
-> Add your new entry to [entries constant in `src/pages/index.astro`](src/pages/index.astro#13),
+> Add your new entry to [entries folder in `src/entries/<project slug you wanted to be>.ts`](src/entries/),
 > <br /> follow structure defined in [src/types/card.interface.ts](src/types/card.interface.ts)
 
 **Please tag `The new entry 💫` to the PR in order to categorize yours as the star being recognized by the Museum.**
