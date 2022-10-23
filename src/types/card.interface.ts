@@ -1,5 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
+import { ProjectThemes } from "../enums/themes.enum";
 
 export interface DetailedPageProps {
   inspiredBy?: string;
@@ -11,7 +12,7 @@ export interface DetailedPageProps {
 export interface CardProps {
   display: "light" | "dark";
   title: string;
-  theme: "playful" | "mindful";
+  theme: ProjectThemes;
   founderName: Founders;
   topic: AcademicTopics;
   githubUrl: string;

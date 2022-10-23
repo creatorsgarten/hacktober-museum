@@ -15,3 +15,11 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.atropos-scale {
+  pointer-events: none;
+}
+
+.atropos-rotate {
+  pointer-events: all;
+}

@@ -1,15 +1,15 @@
 <script lang="ts">
   import Atropos from "atropos/svelte";
   import Fa from "svelte-fa";
-  import { faBrain, faGamepad } from "@fortawesome/free-solid-svg-icons";
   import { Founders } from "../enums/founders.enum";
   import { AcademicTopics } from "../enums/topics.enum";
+  import { ProjectThemes, ProjectThemesFa } from "../enums/themes.enum";
   import "../style/typography.css";
   import "../style/card-theme.css";
 
   export let display: "light" | "dark";
   export let title: string;
-  export let theme: "playful" | "mindful";
+  export let theme: ProjectThemes;
   export let founderName: Founders;
   export let topic: AcademicTopics;
   export let githubUrl: string;
@@ -27,6 +27,7 @@
           background: "bg-HKBF-dark",
           button: "btn-primary btn-outline",
         };
+  const themeFa = ProjectThemesFa[theme];
 </script>
 
 <div id="app" class="w-full">
@@ -52,17 +53,10 @@
               <p class="th-title break-words line-clamp-2 {colorSet.text}">
                 {title}
               </p>
-              {#if theme == "mindful"}
-                <Fa
-                  icon={faBrain}
-                  class="ml-2 place-self-center text-2xl {colorSet.text}"
-                />
-              {:else}
-                <Fa
-                  icon={faGamepad}
-                  class="ml-2 place-self-center text-2xl {colorSet.text}"
-                />
-              {/if}
+              <Fa
+                icon={themeFa}
+                class="ml-2 place-self-center text-2xl {colorSet.text}"
+              />
             </div>
           </div>
           <div class="col-span-1 py-2">

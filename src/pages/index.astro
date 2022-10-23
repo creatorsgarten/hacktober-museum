@@ -31,7 +31,7 @@ const defaultEntries = entries.map((entry) => entry.default);
         <img class="w-max" src="/assets/image-1.png" />
       </div>
       <div
-        class="col-span-12 xl:col-span-9 grid-start-2 overflow-scroll scroll-smooth content-between"
+        class="col-span-12 xl:col-span-9 grid-start-2 overflow-scroll scroll-smooth content-between hide-scrollbar-firefox-mac"
       >
         <ProductEntrySearchCards entries={defaultEntries} client:load />
       </div>
@@ -46,5 +46,10 @@ const defaultEntries = entries.map((entry) => entry.default);
         </div>
       </div>
     </div>
+    <style>
+      .hide-scrollbar-firefox-mac {
+        scrollbar-width: none;
+      }
+    </style>
   </body>
 </html>
