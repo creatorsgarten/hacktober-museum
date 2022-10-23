@@ -14,7 +14,7 @@ In order to maintain the awesomeness of developers' ideas for Hacktoberfest, Cre
 export interface CardProps {
   display: "light" | "dark";
   title: string;
-  theme: "playful" /* 🎮 */ | "mindful" /* 🧠 */;
+  theme: ProjectThemes; /* ("playful" 🎮 | "mindful" 🧠 ); */
   founderName: Founders;
   topic: AcademicTopics;
   githubUrl: string;
@@ -42,7 +42,13 @@ Please follow the [Contribution guidelines.](CONTRIBUTING.MD) One more thing ...
 - [**Chamikorn Phiwla-oung**](https://github.com/Jabont) - ideation of website's theme
 - [**Puvit Pracharktam**](https://github.com/pondspective) - @intaniger's Polaris on getting started with UI design.
 - [**Phoomparin Mano**](https://github.com/heypoom) - CI/CD setup and wonderful domain name https://museum.creatorsgarten.org
+<<<<<<< main
 - [**Siravij Praevisavakij**](https://github.com/siravijbb) - Change button from "Code" to "See more".
+=======
+- [**Nutthapat Pongtanyavichai**](https://github.com/Leomotors) - General Improvements
+- [**Surasak Chaisurin**](https://github.com/ryanrw) - Stranger who passed by and contributed the project
+- [**Kitpipat Jaritwong**](https://github.com/gusb3ll) - Reviewing PRs and suggesting changes to others
+>>>>>>> main
 - `/* your name are the next one ... */`
 
 ![https://www.facebook.com/spaceth/posts/pfbid08ksUhZJPHo1YbkprvybRYfHj5hgqsMGZ46Up8n3FEAaktSUcF5JuJrYRYKSR9azCl](https://stsci-opo.org/STScI-01GFNN3PWJMY4RQXKZ585BC4QH.png)
