@@ -3,96 +3,15 @@
 import "atropos/css";
 import "../style/root.css";
 // import { Image } from "@astrojs/image/components"
-import Card from "../components/Card.svelte";
-import type { CardProps } from "../types/card.interface";
-import { Founders } from "../enums/founders.enum";
-import { AcademicTopics } from "../enums/topics.enum";
+import ProductEntrySearchCards from "../components/ProjectEntrySearchCards.svelte";
+import { EntriesModule } from "../types/entry.interface";
+
+const entries = await Astro.glob<EntriesModule>("../entries/*.ts");
+
+const defaultEntries = entries.map((entry) => entry.default);
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
-const entries: CardProps[] = [
-  {
-    display: "dark",
-    title: "React Useless Hooks",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.React,
-    imagePath: "/images/react-useless-hooks.png",
-    githubUrl: "https://github.com/narze/react-useless",
-  },
-  {
-    display: "light",
-    title: "Coffee to Code",
-    theme: "mindful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.LanguageDiversity,
-    imagePath: "/images/coffee-to-code.jpg",
-    githubUrl: "https://github.com/narze/coffee-to-code",
-  },
-  {
-    display: "light",
-    title: "Torpleng - ต่อเพลง",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Vue,
-    imagePath: "/images/torpleng.jpg",
-    githubUrl: "https://github.com/narze/torpleng",
-  },
-  {
-    display: "dark",
-    title: "Nunmun - นั่นมัน....!",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Svelte,
-    imagePath: "/images/nunmun.png",
-    githubUrl: "https://github.com/narze/nunmun",
-  },
-  {
-    display: "dark",
-    title: "Awesome Cheab Quotes - คำคมเฉียบ ๆ",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Vue,
-    githubUrl: "https://github.com/narze/awesome-cheab-quotes",
-    imagePath: undefined,
-  },
-  {
-    display: "light",
-    title: "Dumb Questions - คำถามโง่ ๆ",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Git,
-    githubUrl: "https://github.com/narze/dumb-questions-th",
-    imagePath: undefined,
-  },
-  {
-    display: "light",
-    title: "Watasalim",
-    theme: "playful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Next,
-    imagePath: "/images/watasalim.png",
-    githubUrl: "https://github.com/narze/awesome-salim-quotes",
-  },
-  {
-    display: "dark",
-    title: "Deploydeemai.today",
-    theme: "mindful",
-    founderName: Founders.Narze,
-    topic: AcademicTopics.Svelte,
-    imagePath: "/images/deploydeemai.png",
-    githubUrl: "https://github.com/narze/deploydeemai.today",
-  },
-  {
-    display: "dark",
-    title: "MukPakPak - มุกแป๊ก ๆ",
-    theme: "playful",
-    founderName: Founders.Tinarskii,
-    topic: AcademicTopics.Solid,
-    imagePath: "/images/mukpakpak.jpeg",
-    githubUrl: "https://github.com/tinarskii/mukpakpak",
-  }
-];
 ---
 
 <html lang="en">
@@ -101,12 +20,12 @@ const entries: CardProps[] = [
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Hacktoberfest Mesuem</title>
+    <title>Hacktoberfest Museum</title>
   </head>
 
   <body>
     <div
-      class="grid grid-cols-12 grid-flow-col gap-x-5 gap-y-8 px-32 py-8 justify-evenly h-[95vh]"
+      class="grid grid-cols-12 grid-flow-col gap-x-5 gap-y-8 md:px-32 py-8 justify-evenly h-[95vh]"
     >
       <div class="hidden xl:block grid-start-1">
         <img class="w-max" src="/assets/image-1.png" />
@@ -114,17 +33,7 @@ const entries: CardProps[] = [
       <div
         class="col-span-12 xl:col-span-9 grid-start-2 overflow-scroll scroll-smooth content-between"
       >
-        <div
-          class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full p-12"
-        >
-          {
-            entries.map((item, i) => (
-              <div class="col-span-9 col-start-auto lg:col-span-4 xl:col-span-4">
-                <Card client:load {...item} />
-              </div>
-            ))
-          }
-        </div>
+        <ProductEntrySearchCards entries={defaultEntries} client:load />
       </div>
       <div class="col-span-2 h-full hidden xl:block">
         <div class="grid grid-cols-1 grid-flow-row content-end h-full">

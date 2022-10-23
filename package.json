@@ -3,15 +3,23 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "typecheck": "astro check && tsc --noEmit && svelte-check",
+    "prettier:check": "prettier --plugin-search-dir=. --check src/**/*",
+    "prettier:write": "prettier --plugin-search-dir=. --write src/**/*",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/image": "^0.8.0",
+    "@astrojs/mdx": "^0.11.4",
     "@astrojs/svelte": "^1.0.0",
     "@astrojs/tailwind": "^2.0.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
@@ -24,12 +32,15 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "atropos": "^1.0.2",
     "daisyui": "^2.31.0",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.4",
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "prettier-plugin-svelte": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "svelte-check": "^2.9.2"
   }
 }

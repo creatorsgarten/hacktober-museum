@@ -1,5 +1,21 @@
 **Always tag `🚀 READY FOR REVIEW` once your PR is Ready to be one of us :)**
 
+## Get started ✨
+
+We're using `pnpm` for package manager, if you're using `npm` or `yarn`, simply run this.
+
+```sh
+npm i -g pnpm
+```
+
+To install dependencies, simply run
+
+```sh
+pnpm install
+```
+
+For more details, go to [https://pnpm.js.org](https://pnpm.js.org/)
+
 ## Quick guide to add your project
 
 > Add your new entry to [entries constant in `src/pages/index.astro`](src/pages/index.astro#13),

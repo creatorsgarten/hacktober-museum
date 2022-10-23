@@ -11,3 +11,7 @@ body {
   height: 100vh;
   @apply bg-cover bg-center;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

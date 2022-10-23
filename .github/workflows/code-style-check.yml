@@ -1,0 +1,26 @@
+name: Code style checking
+
+on:
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d # v2.2.2
+        with:
+          version: 7.13.1
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Reformat code styling using prettier
+        run: pnpm run prettier:check
+      - name: Check type validity
+        run: pnpm run typecheck

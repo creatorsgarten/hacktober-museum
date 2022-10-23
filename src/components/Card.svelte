@@ -32,7 +32,7 @@
 <div id="app" class="w-full">
   <Atropos class="rounded-2xl">
     <div
-      class="card image-full h-64 {colorSet.background} rounded-2xl shadow-xl"
+      class="image-full card h-64 {colorSet.background} rounded-2xl shadow-xl"
     >
       <figure class="overflow-hidden">
         {#if imagePath}
@@ -72,7 +72,7 @@
             </div>
             <div class="card-actions justify-end">
               <a
-                class="en-button-label btn btn-sm normal-case {colorSet.button}"
+                class="en-button-label btn-sm btn normal-case {colorSet.button}"
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
