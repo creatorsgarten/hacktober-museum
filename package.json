@@ -48,6 +48,6 @@
     "svelte-check": "^2.9.2"
   },
   "lint-staged": {
-    "src/**/*": "pnpm run prettier:write"
+    "src/**/*": "prettier --plugin-search-dir=. --write"
   }
 }
