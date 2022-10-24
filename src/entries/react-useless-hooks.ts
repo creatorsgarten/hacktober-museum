@@ -1,5 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
+import { ButtonOPT } from "../enums/button-selector";
 
 export default {
   display: "dark",
