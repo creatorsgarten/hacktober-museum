@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Git,
   githubUrl: "https://github.com/narze/dumb-questions-th",
   imagePath: undefined,
+  ButtonOPT: ButtonOPT.Seemore,
 };

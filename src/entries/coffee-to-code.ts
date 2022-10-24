@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.LanguageDiversity,
   imagePath: "/images/coffee-to-code.jpg",
   githubUrl: "https://github.com/narze/coffee-to-code",
+  ButtonOPT: ButtonOPT.Seemore,
 };

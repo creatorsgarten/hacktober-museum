@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Vue,
   imagePath: "/images/torpleng.jpg",
   githubUrl: "https://github.com/narze/torpleng",
+  ButtonOPT: ButtonOPT.Seemore,
 };

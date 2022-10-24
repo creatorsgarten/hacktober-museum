@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Svelte,
   imagePath: "/images/nunmun.png",
   githubUrl: "https://github.com/narze/nunmun",
+  ButtonOPT: ButtonOPT.Seemore,
 };

@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Next,
   imagePath: "/images/watasalim.png",
   githubUrl: "https://github.com/narze/awesome-salim-quotes",
+  ButtonOPT: ButtonOPT.Seemore,
 };

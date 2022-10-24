@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Solid,
   imagePath: "/images/mukpakpak.jpeg",
   githubUrl: "https://github.com/tinarskii/mukpakpak",
+  ButtonOPT: ButtonOPT.Seemore,
 };

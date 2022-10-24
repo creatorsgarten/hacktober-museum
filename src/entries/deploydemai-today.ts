@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.Svelte,
   imagePath: "/images/deploydeemai.png",
   githubUrl: "https://github.com/narze/deploydeemai.today",
+  ButtonOPT: ButtonOPT.Seemore,
 };

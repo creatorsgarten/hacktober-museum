@@ -9,4 +9,5 @@ export default {
   topic: AcademicTopics.React,
   imagePath: "/images/react-useless-hooks.png",
   githubUrl: "https://github.com/narze/react-useless",
+  ButtonOPT: ButtonOPT.Seemore,
 };

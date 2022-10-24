@@ -6,6 +6,7 @@
   import { ProjectThemes, ProjectThemesFa } from "../enums/themes.enum";
   import "../style/typography.css";
   import "../style/card-theme.css";
+  import { ButtonOPT } "../enums/ButtonOPT.enum"
 
   export let display: "light" | "dark";
   export let title: string;
@@ -28,6 +29,8 @@
           button: "btn-primary btn-outline",
         };
   const themeFa = ProjectThemesFa[theme];
+  const ButtonO = ButtonOPT;
+
 </script>
 
 <div id="app" class="w-full">
@@ -71,7 +74,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                See more
+                 ButtonO={ButtonOPT}
               </a>
             </div>
           </div>
