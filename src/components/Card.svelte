@@ -15,6 +15,7 @@
   export let topic: AcademicTopics;
   export let githubUrl: string;
   export let imagePath: string | undefined;
+  export let ButtonO: ButtonOPT
 
   const colorSet =
     display == "light"
@@ -29,7 +30,6 @@
           button: "btn-primary btn-outline",
         };
   const themeFa = ProjectThemesFa[theme];
-  const ButtonO = ButtonOPT;
 
 </script>
 
