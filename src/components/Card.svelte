@@ -6,7 +6,7 @@
   import { ProjectThemes, ProjectThemesFa } from "../enums/themes.enum";
   import "../style/typography.css";
   import "../style/card-theme.css";
-  import { ButtonOPT } "../enums/ButtonOPT.enum"
+  import { ButtonOPT } from "../enums/ButtonOPT.enum"
 
   export let display: "light" | "dark";
   export let title: string;
