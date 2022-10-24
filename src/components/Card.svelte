@@ -15,7 +15,7 @@
   export let topic: AcademicTopics;
   export let githubUrl: string;
   export let imagePath: string | undefined;
-  export let ButtonOPT: string;
+  export let ButtonOption: ButtonOPT;
 
   const colorSet =
     display == "light"
@@ -74,7 +74,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtonOPT}
+                 {ButtonOption}
               </a>
             </div>
           </div>
