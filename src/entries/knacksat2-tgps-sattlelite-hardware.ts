@@ -1,6 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
+import {  ButtoDisplayoption  } from "../enums/button-selector.enum"
 
 
 export default {
