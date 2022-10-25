@@ -14,6 +14,12 @@ To install dependencies, simply run
 pnpm install
 ```
 
+Don't forget to run format using
+
+```sh
+pnpm prettier:write
+```
+
 For more details, go to [https://pnpm.js.org](https://pnpm.js.org/)
 
 ## Quick guide to add your project
