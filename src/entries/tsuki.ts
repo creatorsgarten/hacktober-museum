@@ -10,5 +10,5 @@ export default {
   imagePath:
     "https://user-images.githubusercontent.com/77166960/154808873-1bdd3aab-1aa4-4fcd-a3e6-17dfcde3b720.png",
   githubUrl: "https://github.com/Gusb3ll/Tsuki",
-  ButtoDisplayoption: ButtoDisplayoption.Seemore,
+  buttonDisplayOption: ButtonDisplayOption.SeeMore,
 };
