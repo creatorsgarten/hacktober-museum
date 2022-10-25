@@ -75,7 +75,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtonOption}
+                 {ButtonOPT}
               </a>
             </div>
           </div>

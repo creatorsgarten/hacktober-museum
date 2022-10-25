@@ -10,5 +10,5 @@ export default {
   topic: AcademicTopics.Vue,
   githubUrl: "https://github.com/narze/awesome-cheab-quotes",
   imagePath: undefined,
-  ButtonOption: ButtonOPT.Seemore,
+  ButtonOPT: ButtonOPT.Seemore,
 };
