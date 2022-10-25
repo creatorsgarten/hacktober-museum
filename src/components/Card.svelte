@@ -7,7 +7,8 @@
   import "../style/typography.css";
   import "../style/card-theme.css";
   import { ButtonDisplayOption } from "../enums/button-selector.enum";
-export let buttonLabel: string;
+  
+  export let buttonLabel: string;
   export let display: "light" | "dark";
   export let title: string;
   export let theme: ProjectThemes;
@@ -74,7 +75,7 @@ export let buttonLabel: string;
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtoDisplayoption}
+                { buttonLabel ?? "See More" }
               </a>
             </div>
           </div>
