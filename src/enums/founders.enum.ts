@@ -4,4 +4,5 @@ export enum Founders {
   Tinarskii = "Tinnaphat Somsang",
   KNACKSAT2TGPS = "KNACKSAT2TGPS Team",
   Gusb3ll = "Kitpipat Jaritwong",
+  Ntsd = "Jirawat Boonkumnerd",
 }

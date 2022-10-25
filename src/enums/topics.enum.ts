@@ -8,4 +8,5 @@ export enum AcademicTopics {
   Solid = "Solid.js",
   HardwareANDcpp = "Hardware.cpp",
   Python = "Python",
+  Go = "Go",
 }
