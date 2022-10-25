@@ -10,5 +10,5 @@ export default {
   topic: AcademicTopics.HardwareANDcpp,
   imagePath: "/images/TGPSPro.png",
   githubUrl: "https://github.com/KNACKSAT2-TGPS",
-  ButtonLabel: ButtonLabel.Seemore,
+  ButtonLabel: ButtonLabel.Code,
 };
