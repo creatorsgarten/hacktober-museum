@@ -7,7 +7,7 @@
   import "../style/typography.css";
   import "../style/card-theme.css";
   import { ButtonDisplayOption } from "../enums/button-selector.enum";
-
+export let buttonLabel: string;
   export let display: "light" | "dark";
   export let title: string;
   export let theme: ProjectThemes;
