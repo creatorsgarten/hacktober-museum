@@ -6,7 +6,7 @@
   import { ProjectThemes, ProjectThemesFa } from "../enums/themes.enum";
   import "../style/typography.css";
   import "../style/card-theme.css";
-  import { ButtonOPT } from "../enums/button-selector"
+  import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
 
   export let display: "light" | "dark";
   export let title: string;
@@ -76,7 +76,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtonOPT}
+                 {ButtoDisplayoption}
               </a>
             </div>
           </div>
