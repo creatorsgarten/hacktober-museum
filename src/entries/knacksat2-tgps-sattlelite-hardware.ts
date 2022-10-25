@@ -1,6 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import { ButtonOPT } from "../enums/button-selector";
+import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
 
 
 export default {
@@ -11,5 +11,5 @@ export default {
   topic: AcademicTopics.HardwareANDcpp,
   imagePath: "/images/TGPSPro.png",
   githubUrl: "https://github.com/KNACKSAT2-TGPS",
-  ButtonOPT: ButtonOPT.Seemore,
+  ButtoDisplayoption: ButtoDisplayoption.Seemore,
 };

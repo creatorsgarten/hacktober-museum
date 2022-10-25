@@ -1,6 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import { ButtonOPT } from "../enums/button-selector";
+import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
 
 export default {
   display: "light",
@@ -10,5 +10,5 @@ export default {
   topic: AcademicTopics.Vue,
   imagePath: "/images/torpleng.jpg",
   githubUrl: "https://github.com/narze/torpleng",
-  ButtonOPT: ButtonOPT.Seemore,
+  ButtoDisplayoption: ButtoDisplayoption.Seemore,
 };

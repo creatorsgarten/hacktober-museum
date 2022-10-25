@@ -1,6 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import { ButtonOPT } from "../enums/button-selector";
+import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
 
 export default {
   display: "dark",
@@ -10,5 +10,5 @@ export default {
   topic: AcademicTopics.React,
   imagePath: "/images/react-useless-hooks.png",
   githubUrl: "https://github.com/narze/react-useless",
-  ButtonOPT: ButtonOPT.Seemore,
+  ButtoDisplayoption: ButtoDisplayoption.Seemore,
 };

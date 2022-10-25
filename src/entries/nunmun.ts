@@ -1,7 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import { ButtonOPT } from "../enums/button-selector";
-
+import {  ButtoDisplayoption  } from "../emum/button-selector.enum"
 export default {
   display: "dark",
   title: "Nunmun - นั่นมัน....!",
@@ -10,5 +9,5 @@ export default {
   topic: AcademicTopics.Svelte,
   imagePath: "/images/nunmun.png",
   githubUrl: "https://github.com/narze/nunmun",
-  ButtonOPT: ButtonOPT.Seemore,
+  ButtButtoDisplayoptiononOPT: ButtoDisplayoption.Seemore,
 };
