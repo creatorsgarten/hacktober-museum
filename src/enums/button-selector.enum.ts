@@ -1,4 +1,4 @@
 export enum ButtoDisplayoption {
-    code = "Code",
-    Seemore = "See more",
+    Code = "Code",
+    SeeMore = "See more",
 }
