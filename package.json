@@ -15,7 +15,9 @@
     "prettier:check": "prettier --plugin-search-dir=. --check src/**/*",
     "prettier:write": "prettier --plugin-search-dir=. --write src/**/*",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@astrojs/image": "^0.8.0",
@@ -37,10 +39,15 @@
     "@tailwindcss/typography": "^0.5.7",
     "atropos": "^1.0.2",
     "daisyui": "^2.31.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.4",
     "prettier-plugin-svelte": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "svelte-check": "^2.9.2"
+  },
+  "lint-staged": {
+    "src/**/*": "prettier --plugin-search-dir=. --write"
   }
 }
