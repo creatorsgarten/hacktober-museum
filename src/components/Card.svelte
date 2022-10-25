@@ -15,7 +15,7 @@
   export let topic: AcademicTopics;
   export let githubUrl: string;
   export let imagePath: string | undefined;
-  export let ButtonOption: ButtonOPT | undefined;
+  export let ButtonOPT: ButtonOption;
 
   const colorSet =
     display == "light"
@@ -30,7 +30,7 @@
           button: "btn-primary btn-outline",
         };
   const themeFa = ProjectThemesFa[theme];
-  const ButtonOP = ButtonOption;
+
 
 </script>
 
@@ -75,7 +75,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtonOP}
+                 {ButtonOption}
               </a>
             </div>
           </div>
