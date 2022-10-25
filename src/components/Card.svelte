@@ -30,6 +30,7 @@
           button: "btn-primary btn-outline",
         };
   const themeFa = ProjectThemesFa[theme];
+  const ButtonOP = ButtonOption;
 
 </script>
 
@@ -74,7 +75,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 {ButtonOption}
+                 {ButtonOP}
               </a>
             </div>
           </div>
