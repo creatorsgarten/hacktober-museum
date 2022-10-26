@@ -1,6 +1,7 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
 import { ProjectThemes } from "../enums/themes.enum";
+import { ButtonLabel } from "../enums/button-selector.enum";
 
 export interface DetailedPageProps {
   inspiredBy?: string;
@@ -17,5 +18,6 @@ export interface CardProps {
   topic: AcademicTopics;
   githubUrl: string;
   imagePath: string | undefined;
+  buttonLabel?: ButtonLabel;
   detail?: DetailedPageProps;
 }

@@ -1,11 +1,11 @@
 import { faBrain, faGamepad } from "@fortawesome/free-solid-svg-icons";
 
 export enum ProjectThemes {
-  playful = "playful",
-  mindful = "mindful",
+  Playful = "playful",
+  Mindful = "mindful",
 }
 
 export const ProjectThemesFa = {
-  [ProjectThemes.playful]: faGamepad,
-  [ProjectThemes.mindful]: faBrain,
+  [ProjectThemes.Playful]: faGamepad,
+  [ProjectThemes.Mindful]: faBrain,
 };

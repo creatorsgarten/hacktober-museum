@@ -1,14 +1,18 @@
+import { ButtonLabel } from "../enums/button-selector.enum";
 import { Founders } from "../enums/founders.enum";
+import { ProjectThemes } from "../enums/themes.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import {  ButtonLabel   } from "../enums/button-selector.enum";
+import { CardProps } from "../types/card.interface";
 
-export default {
+const props: CardProps = {
   display: "dark",
   title: "Nunmun - นั่นมัน....!",
-  theme: "playful",
+  theme: ProjectThemes.Playful,
   founderName: Founders.Narze,
   topic: AcademicTopics.Svelte,
   imagePath: "/images/nunmun.png",
   githubUrl: "https://github.com/narze/nunmun",
-  ButtonLabel: ButtonLabel.Seemore,
+  buttonLabel: ButtonLabel.SeeMore,
 };
+
+export default props;

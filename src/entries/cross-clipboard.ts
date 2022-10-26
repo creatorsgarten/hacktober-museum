@@ -1,14 +1,18 @@
+import { ButtonLabel } from "../enums/button-selector.enum";
 import { Founders } from "../enums/founders.enum";
+import { ProjectThemes } from "../enums/themes.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import {  ButtonLabel   } from "../enums/button-selector.enum";
+import { CardProps } from "../types/card.interface";
 
-export default {
+const props: CardProps = {
   display: "dark",
   title: "Cross Clipbaord - A multi device clipboard sharing over P2P network",
-  theme: "mindful",
+  theme: ProjectThemes.Mindful,
   founderName: Founders.Ntsd,
   topic: AcademicTopics.Go,
   imagePath: "/images/cross-clipboard.jpg",
   githubUrl: "https://github.com/ntsd/cross-clipboard",
-  ButtonLabel: ButtonLabel.Seemore,
+  buttonLabel: ButtonLabel.SeeMore,
 };
+
+export default props;

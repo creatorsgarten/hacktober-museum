@@ -1,14 +1,18 @@
+import { ButtonLabel } from "../enums/button-selector.enum";
 import { Founders } from "../enums/founders.enum";
+import { ProjectThemes } from "../enums/themes.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import {  ButtonLabel   } from "../enums/button-selector.enum";
+import { CardProps } from "../types/card.interface";
 
-export default {
+const props: CardProps = {
   display: "light",
   title: "Dumb Questions - คำถามโง่ ๆ",
-  theme: "playful",
+  theme: ProjectThemes.Playful,
   founderName: Founders.Narze,
   topic: AcademicTopics.Git,
   githubUrl: "https://github.com/narze/dumb-questions-th",
   imagePath: undefined,
-  ButtonLabel: ButtonLabel.Seemore,
+  buttonLabel: ButtonLabel.SeeMore,
 };
+
+export default props;

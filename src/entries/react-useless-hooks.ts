@@ -1,14 +1,18 @@
+import { ButtonLabel } from "../enums/button-selector.enum";
 import { Founders } from "../enums/founders.enum";
+import { ProjectThemes } from "../enums/themes.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import {  ButtonLabel   } from "../enums/button-selector.enum";
+import { CardProps } from "../types/card.interface";
 
-export default {
+const props: CardProps = {
   display: "dark",
   title: "React Useless Hooks",
-  theme: "playful",
+  theme: ProjectThemes.Playful,
   founderName: Founders.Narze,
   topic: AcademicTopics.React,
   imagePath: "/images/react-useless-hooks.png",
   githubUrl: "https://github.com/narze/react-useless",
-  ButtonLabel: ButtonLabel.Seemore,
+  buttonLabel: ButtonLabel.SeeMore,
 };
+
+export default props;
