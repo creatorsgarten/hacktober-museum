@@ -1,7 +1,7 @@
+import { ButtonLabel } from "../enums/button-label.enum";
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
 import { ProjectThemes } from "../enums/themes.enum";
-import { ButtonLabel } from "../enums/button-selector.enum";
 
 export interface DetailedPageProps {
   inspiredBy?: string;

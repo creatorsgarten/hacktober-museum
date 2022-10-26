@@ -1,4 +1,4 @@
-import { ButtonLabel } from "../enums/button-selector.enum";
+import { ButtonLabel } from "../enums/button-label.enum";
 import { Founders } from "../enums/founders.enum";
 import { ProjectThemes } from "../enums/themes.enum";
 import { AcademicTopics } from "../enums/topics.enum";

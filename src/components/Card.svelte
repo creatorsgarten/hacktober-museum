@@ -1,14 +1,16 @@
 <script lang="ts">
   import Atropos from "atropos/svelte";
   import Fa from "svelte-fa";
+
+  import { ButtonLabel } from "../enums/button-label.enum";
   import { Founders } from "../enums/founders.enum";
   import { AcademicTopics } from "../enums/topics.enum";
   import { ProjectThemes, ProjectThemesFa } from "../enums/themes.enum";
+
   import "../style/typography.css";
   import "../style/card-theme.css";
-  import { ButtonDisplayOption } from "../enums/button-selector.enum";
-  
-  export let buttonLabel: string;
+
+  export let buttonLabel: ButtonLabel = ButtonLabel.SeeMore;
   export let display: "light" | "dark";
   export let title: string;
   export let theme: ProjectThemes;
@@ -30,8 +32,6 @@
           button: "btn-primary btn-outline",
         };
   const themeFa = ProjectThemesFa[theme];
-
-
 </script>
 
 <div id="app" class="w-full">
@@ -75,7 +75,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                { buttonLabel ?? "See More" }
+                {buttonLabel}
               </a>
             </div>
           </div>
