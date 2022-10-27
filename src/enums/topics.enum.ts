@@ -9,4 +9,5 @@ export enum AcademicTopics {
   HardwareANDcpp = "Hardware.cpp",
   Python = "Python",
   Go = "Go",
+  Markdown = "Markdown",
 }
