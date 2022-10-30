@@ -10,7 +10,7 @@ const props: CardProps = {
   founderName: Founders.EasyEDA2021,
   topic: AcademicTopics.JavaScript,
   imagePath: undefined,
-  githubUrl: "https://github.com/EasyEDA2021",
+  githubUrl: "https://github.com/EasyEDA2021/easyeda-i18n",
 };
 
 export default props;
