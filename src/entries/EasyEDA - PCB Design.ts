@@ -9,8 +9,8 @@ const props: CardProps = {
   theme: ProjectThemes.Mindful,
   founderName: Founders.EasyEDA2021,
   topic: AcademicTopics.JavaScript,
+  imagePath: undefined,
   githubUrl: "https://github.com/EasyEDA2021",
-  imagePath: undefined
 };
 
 export default props;
