@@ -11,4 +11,5 @@ export enum AcademicTopics {
   Go = "Go",
   Markdown = "Markdown",
   JavaScript = "JavaScript",
+  Arduino = "Arduino.cpp"
 }
