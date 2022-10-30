@@ -6,4 +6,5 @@ export enum Founders {
   Gusb3ll = "Kitpipat Jaritwong",
   Ntsd = "Jirawat Boonkumnerd",
   CunnyDev = "Cunny Developer",
+  EasyEDA2021 = "EasyEDA2021",
 }

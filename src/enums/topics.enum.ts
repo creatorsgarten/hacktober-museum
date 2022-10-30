@@ -10,4 +10,5 @@ export enum AcademicTopics {
   Python = "Python",
   Go = "Go",
   Markdown = "Markdown",
+  JavaScript = "JavaScript",
 }
