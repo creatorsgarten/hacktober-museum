@@ -5,7 +5,8 @@ import { CardProps } from "../types/card.interface";
 
 const props: CardProps = {
   display: "dark",
-  title: "Universal wireless communication library",
+  title: 
+    "Universal wireless communication library",
   theme: ProjectThemes.Mindful,
   founderName: Founders.jgromes,
   topic: AcademicTopics.Arduino,
