@@ -7,10 +7,11 @@ import { CardProps } from "../types/card.interface";
 const props: CardProps = {
   display: "dark",
   title: "Universal wireless communication library",
-  theme: ProjectThemes.Mindful,
+  theme: ProjectThemes.Playful,
   founderName: Founders.jgromes,
   topic: AcademicTopics.Arduino,
-  githubUrl: "https://github.com/jgromes/RadioLib",
   imagePath: "/images/jgromes.png",
+  githubUrl: "https://github.com/RadioLib",
 };
+
 export default props;
